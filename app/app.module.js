@@ -8,9 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require('@angular/core'); //Necessary to suppress errors using web components
 var platform_browser_1 = require('@angular/platform-browser');
-var core_2 = require('@angular/core'); //Necessary to suppress errors using web components
 var app_component_1 = require('./app.component');
 var AppModule = (function () {
     function AppModule() {
@@ -20,7 +19,7 @@ var AppModule = (function () {
             imports: [platform_browser_1.BrowserModule],
             declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent],
-            schemas: [core_2.CUSTOM_ELEMENTS_SCHEMA] //Necessary to suppress errors using web components
+            schemas: [core_1.CUSTOM_ELEMENTS_SCHEMA] //Necessary to suppress errors using web components
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
